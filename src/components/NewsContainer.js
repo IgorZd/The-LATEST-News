@@ -6,7 +6,7 @@ class NewsContainer extends React.Component {
     super(props);
     this.state = {
       data: [],
-      filtered: []
+      filtered: ""
     };
     this.handleChange = this.handleChange.bind(this);
   }

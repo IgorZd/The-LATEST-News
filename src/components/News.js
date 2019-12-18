@@ -15,16 +15,12 @@ const News = props => {
         </p>
       </li>
       <li className="list_article_img_cont">
-        <img
-          className="list_article_img"
-          src={number.urlToImage}
-          alt="Article"
-        />
+        <img className="list_article_img" src={number.urlToImage} alt="IMG" />
       </li>
     </div>
   ));
   return (
-    <div>
+    <div className="list_article_layer">
       <ul>{listArticles}</ul>
     </div>
   );

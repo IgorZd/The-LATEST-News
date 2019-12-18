@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Girassol&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 header {
   min-width: 1440px;
   height: 75px;
@@ -32,13 +34,90 @@ header {
   -webkit-text-fill-color: transparent;
 }
 .clock {
-  width: 25%;
+  width: 12%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: fixed;
   font-family: "Courier Prime", monospace;
   font-size: 20px;
-  margin-left: 1200px;
+  margin-left: 1340px;
   color: white;
+  background-color: rgb(255, 0, 0);
+}
+.news {
+  width: 100%;
+}
+.list_article_layer {
+  width: 100%;
+}
+.news_container {
+  width: 100%;
+  display: flex;
+}
+.news_container ul {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list_articles_container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list_article_title {
+  width: 100%;
+  font-family: "Ma Shan Zheng", cursive;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+}
+.list_article_description {
+  width: 100%;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  background: linear-gradient(45deg, rgb(255, 0, 0) 33%, #3a8adf 66%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list_article_body {
+  width: 100%;
+  font-family: "Courier Prime", monospace;
+  font-size: 15px;
+}
+.list_article_body a {
+  font-family: "Dosis", sans-serif;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+.list_article_body a:visited {
+  font-family: "Dosis", sans-serif;
+  color: #3a8adf;
+  text-decoration: none;
+}
+.list_article_img_cont {
+  width: 100%;
+}
+.list_article_img_cont img {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(to left, rgb(255, 0, 0), white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  margin: 0px;
+  background: linear-gradient(45deg, rgb(255, 0, 0) 33%, #3a8adf 66%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
