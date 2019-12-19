@@ -6,11 +6,12 @@ class NewsContainer extends React.Component {
     super(props);
     this.state = {
       data: [],
-      filtered: ""
+      filtered: []
     };
     this.handleChange = this.handleChange.bind(this);
   }
   componentDidMount() {
+    // eslint-disable-next-line
     axios
       .get(
         "https://newsapi.org/v2/top-headlines?country=us&apiKey=00a3462d266d46af9a6f2050b45ff2fd"
@@ -27,14 +28,18 @@ class NewsContainer extends React.Component {
     });
   }
   handleChange(e) {
-    let currentList = [],
-      newList = [];
+    let currentList = [];
+    let newList = [];
     if (e.target.value !== "") {
       currentList = this.state.data;
       newList = currentList.filter(item => {
-        const lc = item.content.toLowerCase(),
-          filter = e.target.value.toLowerCase();
-        return lc.includes(filter);
+        if (item.content) {
+          const lc = item.content.toLowerCase();
+          const filter = e.target.value.toLowerCase();
+          return lc.includes(filter);
+        } else {
+          return false;
+        }
       });
     } else {
       newList = this.state.data;
