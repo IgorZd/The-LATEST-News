@@ -1,0 +1,43 @@
+header {
+  min-width: 1440px;
+  height: 75px;
+  background: linear-gradient(to left, rgb(255, 0, 0), white);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name {
+  width: 235px;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+  margin: 0px;
+  margin-left: 20px;
+  font-family: "Girassol", cursive;
+}
+.day_week {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.date {
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  margin: 0px;
+  background: linear-gradient(45deg, rgb(255, 0, 0) 33%, #3a8adf 66%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.clock {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  margin-left: 1340px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+}

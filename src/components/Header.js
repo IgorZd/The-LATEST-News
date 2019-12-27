@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import Clock from "./Clock";
 const Header = () => {
   return (
