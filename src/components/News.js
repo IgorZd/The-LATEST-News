@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/News.css";
 const News = props => {
   const articles = props.filtered;
   const listArticles = articles.map((article, index) => (
@@ -15,7 +16,11 @@ const News = props => {
         </p>
       </li>
       <li className="list_article_img_cont">
-        <img className="list_article_img" src={article.urlToImage} alt="IMG" />
+        <img
+          className="list_article_img"
+          src={article.urlToImage}
+          alt="IMG not found"
+        />
       </li>
     </div>
   ));
