@@ -6,7 +6,7 @@ export const getArticles = () => dispatch => {
       "https://newsapi.org/v2/top-headlines?country=us&apiKey=00a3462d266d46af9a6f2050b45ff2fd"
     )
     .then(response => {
-      const data = response.data.articles.slice(0, 15);
+      const data = response.data.articles;
       dispatch({
         type: GET_ARTICLES,
         payload: data

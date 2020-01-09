@@ -19,19 +19,18 @@
   justify-content: space-around;
 }
 .list_articles_container {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .list_article_title h2 {
-  width: 100%;
   font-family: "Playfair Display";
   color: #1a2953;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 26px;
-  margin: 0px;
+  letter-spacing: 1px;
 }
 .list_article_description {
   width: 100%;
@@ -76,7 +75,7 @@
 .more_box {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .more {

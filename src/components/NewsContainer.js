@@ -9,8 +9,7 @@ class NewsContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchValue: "",
-      articleBody: "hide"
+      searchValue: ""
     };
   }
   componentDidMount() {
@@ -78,7 +77,6 @@ class NewsContainer extends React.Component {
                   return false;
                 }
               })}
-              articleBodyStyle={this.state.articleBodyStyle}
             />
           </div>
         </div>
