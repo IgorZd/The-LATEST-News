@@ -22,7 +22,7 @@ header {
   line-height: 25px;
 }
 .clock_box {
-  width: 10%;
+  width: 160px;
 }
 .clock {
   font-family: "Cabin";
@@ -32,24 +32,10 @@ header {
   letter-spacing: 0.5px;
   line-height: 25px;
 }
-@media screen and (max-width: 1024px) {
-  .clock {
-    margin-left: 845px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .clock {
-    margin-left: 590px;
-  }
-  .day_week {
-    position: relative;
-    right: 40px;
-  }
-}
 @media screen and (max-width: 600px) {
-  .day_week {
+  .name {
     position: relative;
-    left: 20px;
+    left: 148px;
   }
   .clock {
     display: none;
@@ -57,19 +43,40 @@ header {
 }
 @media screen and (max-width: 420px) {
   .date {
-    background: linear-gradient(45deg, white 33%, white 66%, white);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    width: 40%;
+    position: relative;
+    left: 20px;
+  }
+  .name {
+    width: 60%;
+    left: 100px;
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 375px) {
   header {
     height: 120px;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .date {
+    width: 33%;
+    margin: 0px;
   }
   .name {
-    background: linear-gradient(45deg, rgb(255, 0, 0) 33%, #3a8adf 66%, white);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    width: 73%;
+    margin: 0px;
+    font-size: 33px;
+    position: relative;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .name {
+    font-size: 28px;
+  }
+  .date {
+    width: 40%;
   }
 }
