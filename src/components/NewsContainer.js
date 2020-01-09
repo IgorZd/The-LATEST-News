@@ -1,13 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getArticles } from "../store/actions/index";
+import "../styles/NewsContainer.css";
+import SearchImg from "../images/search.png";
 //import axios from "axios";
 import News from "./News";
 class NewsContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchValue: ""
+      searchValue: "",
+      articleBody: "hide"
     };
   }
   componentDidMount() {
@@ -53,13 +56,16 @@ class NewsContainer extends React.Component {
     if (this.props.articles.length !== 0) {
       return (
         <div className="news">
-          <div>
-            <input
-              type="text"
-              className="input"
-              onChange={this.handleChange}
-              placeholder="Search..."
-            />
+          <div className="search_form_box">
+            <form className="search_form">
+              <img className="search_img" src={SearchImg} alt="Search"></img>
+              <input
+                type="text"
+                className="search_input"
+                onChange={this.handleChange}
+                placeholder="Search..."
+              />
+            </form>
           </div>
           <div className="news_container">
             <News
@@ -72,6 +78,7 @@ class NewsContainer extends React.Component {
                   return false;
                 }
               })}
+              articleBodyStyle={this.state.articleBodyStyle}
             />
           </div>
         </div>

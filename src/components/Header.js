@@ -4,11 +4,11 @@ import Clock from "./Clock";
 const Header = () => {
   return (
     <header>
+      <p className="date">{new Date().toDateString()}</p>
       <p className="name">The LATEST News</p>
-      <div className="day_week">
-        <p className="date">Today is {new Date().toDateString()}</p>
+      <div className="clock_box">
+        <Clock />
       </div>
-      <Clock />
     </header>
   );
 };

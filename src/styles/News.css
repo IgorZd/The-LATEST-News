@@ -15,37 +15,50 @@
   padding: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 .list_articles_container {
-  width: 90%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.list_article_title {
+.list_article_title h2 {
   width: 100%;
-  font-family: "Ma Shan Zheng", cursive;
-  font-size: 30px;
-  color: rgb(255, 0, 0);
+  font-family: "Playfair Display";
+  color: #1a2953;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0px;
 }
 .list_article_description {
   width: 100%;
-  font-family: "Courier Prime", monospace;
-  font-size: 20px;
-  background: linear-gradient(45deg, rgb(255, 0, 0) 33%, #3a8adf 66%, white);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-family: "Cabin";
+  color: #1a2953;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
 }
 .list_article_body {
   width: 100%;
-  font-family: "Courier Prime", monospace;
+  /* display: none; */
+  font-family: "Cabin";
+  color: #535f7e;
+  font-weight: 400;
   font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
 }
 .list_article_body a {
-  font-family: "Dosis", sans-serif;
-  color: rgb(255, 0, 0);
-  text-decoration: none;
+  font-family: "Cabin";
+  color: #1a2953;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 4px;
 }
 .list_article_body a:visited {
   font-family: "Dosis", sans-serif;
@@ -57,4 +70,33 @@
 }
 .list_article_img_cont img {
   width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.more_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more {
+  font-family: "Playfair Display";
+  color: #1a2953;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+.more:hover {
+  color: #ea2d4e;
+  cursor: pointer;
+}
+.date_of_publ {
+  font-family: "Cabin";
+  color: #8c94a9;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 4px;
 }
